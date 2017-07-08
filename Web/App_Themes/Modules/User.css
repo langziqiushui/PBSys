@@ -1,0 +1,3 @@
+﻿#divVerifyCodeStatus{width:15px; height:14px; position:absolute; display:none; z-index:999999999;}
+.verifyCode_error{ background:url(images/login/errorOk.gif) no-repeat 0px 0px;}
+.verifyCode_ok{ background:url(images/login/errorOk.gif) no-repeat 0px -20px;}

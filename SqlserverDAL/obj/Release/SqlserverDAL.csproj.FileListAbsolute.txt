@@ -1,0 +1,11 @@
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\YX.SqlserverDAL.dll
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\YX.SqlserverDAL.pdb
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\YX.Core.dll
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\YX.Domain.dll
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\NPOI.dll
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\JsonSeralize.dll
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\YX.Core.pdb
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\bin\Release\YX.Domain.pdb
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\obj\Release\SqlserverDAL.csprojResolveAssemblyReference.cache
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\obj\Release\YX.SqlserverDAL.dll
+E:\code\BBTIKU\WEBAPI\SqlserverDAL\obj\Release\YX.SqlserverDAL.pdb

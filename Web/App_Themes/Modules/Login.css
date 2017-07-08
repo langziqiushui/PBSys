@@ -1,0 +1,43 @@
+﻿#divVerifyCodeStatus{width:15px; height:14px; position:absolute; display:none; z-index:999999999;}
+.verifyCode_error{ background:url(images/login/errorOk.gif) no-repeat 0px 0px;}
+.verifyCode_ok{ background:url(images/login/errorOk.gif) no-repeat 0px -20px;}
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,em,button{margin:0;padding:0; }
+body{font:12px/1.5 arial,Simsun, sans-serif; color:#333;}
+img, fieldset{border:none;vertical-align:middle;}
+ul,li{margin:0px;padding:0px;}
+input, textarea{font-size:12px;}
+table{border-collapse:collapse;}
+a{color:#06c;text-decoration:none;text-decoration:none;blr:expression_r(this.onFocus=this.blur())}
+h1,h2,h3,h4,h5,font{font-family:"Times New Roman",Simsun; font-size:12px; font-weight:normal;}
+ul,ol{list-style:none;}
+em,i,dfn{font-style:normal;}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+
+
+/*头部*/
+.header{width:854px; height:165px; margin:0px auto; background:url(images/Login/login-top-bg.jpg) no-repeat; text-align:center;}
+.logo{display:inline-block;width:306px; height:41px; margin-top:100px;}
+
+body::before {background-color:#D6DEE0 !important;}
+
+/*内容*/
+.login-content{ font-family:微软雅黑; width:100%; clear:both; height:470px; background:url(images/Login/login-content-bg.jpg) repeat-x top;}
+.login-box{width:854px; height:470px; background:url(images/Login/login-box-bg.jpg) no-repeat center; margin:0px auto;}
+.login-list{margin:0px auto; width:440px; padding-top:20px;}
+.login-list ul{padding-top:20px;}
+.login-list ul li{width:100%; clear:both; font-size:14px; color:#404040; display:block; margin-bottom:25px;}
+.login-list ul li input{vertical-align:middle;}
+.login-title{display:inline-block; width:100px; text-align:right; font-size:14px;}
+.login-input{width:280px; height:32px; line-height:32px; padding-left:5px; border:1px solid #ccc; background:#f8f8f8; border-radius:3px;}
+.login-input:focus{border:1px solid #aaa; background:#fff;}
+.login-yanzhengma-input{width:188px; margin-right:8px; text-transform:uppercase; font-weight:bold; font-size:14px;}
+.login-user-type{display:inline-block; margin-right:20px;}
+.login-button{display:inline-block; width:287px; height:38px; line-height:38px; border:none; background:#3891D5; cursor:pointer; color:#fff; font-size:14px; border-radius:3px; margin-top:5px;}
+.login-button:hover{background:#427EEC;}
+.login-error-title{text-align:center; height:40px; line-height:40px; font-size:13px; color:#db0000; width:480px;}
+
+
+/*底部*/
+.footer{width:100%;clear:both; padding:20px 0px;}
+.footer p{width:100%; clear:both; text-align:center; color:#666; font-family:Arial, Helvetica, sans-serif; padding-top:6px;}

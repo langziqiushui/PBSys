@@ -1,0 +1,448 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YX.Web.MasterPages.Normal.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <asp:ContentPlaceHolder ID="cpHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .setting-container input
+        {
+            position: absolute;
+            left: -9000px;
+        }
+        .avatar
+        {
+            border-left: 0px solid #fb6e52 !important;
+        }
+        .notice-list
+        {
+            padding-bottom: 10px !important;
+            padding-left: 13px !important;
+            font-family: 微软雅黑;
+        }
+        .notice-list a
+        {
+            height: 27px !important;
+            line-height: 27px !important;
+            padding: 0px !important;
+            font-size: 14px !important;
+        }
+        .notice-list a i
+        {
+            color: Red;
+            font-style: normal;
+        }
+        .notice-list a:hover
+        {
+            color: Red !important;
+        }
+        .notice-task
+        {
+            color: Red;
+            font-size: 16px;
+            font-family: 微软雅黑;
+            font-weight: bold;
+        }
+        .notice-task-red
+        {
+            color: #d23c17 !important;
+        }
+        .task-item-red
+        {
+            color: red !important;
+        }
+        .page-header .header-buttons a.forward::before
+        {
+            background-color: #2dc3e8;
+        }
+        .page-header .header-buttons a.back::before
+        {
+            background-color: #fb6e52;
+        }
+    </style>
+</head>
+<body>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand"><small>
+                        <img src="/App_Themes/images/logo-admin.png" />
+                    </small></a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i title="折叠左边菜单" class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-app">
+                </div>
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                            <li><a id="lnkTaskContainer" class="dropdown-toggle" data-toggle="dropdown" title="Tasks"
+                                href="javascript:void(0);"><i id="divNoticeIcon" class="icon fa fa-envelope"></i>
+                                <span class="badge" id="divNumTotalNotice">0</span> </a>
+                                <!--Tasks Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow " style="min-width: 180px !important;">
+                                    <li class="dropdown-header bordered-darkorange"><i class="fa fa-tasks"></i>共收到 <span
+                                        class="notice-task" id="divNumTask">0</span> 组消息 </li>
+                                    <li class="notice-list"></li>
+                                </ul>
+                                <!--/Tasks Dropdown-->
+                            </li>
+                            <li><a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                <div class="avatar" title="View your public profile">
+                                    <img src="/App_Themes/images/photo.png">
+                                </div>
+                                <section>
+                                        <h2><span class="profile"><span><%= YX.Factory.AdminUserManager.Current.AdminName %>！您好</span></span></h2>
+                                    </section>
+                            </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                    <!--Theme Selector Area-->
+                                    <li class="theme-area">
+                                        <ul class="colorpicker" id="skin-changer">
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #5DB2FF;" rel="/App_Themes/BootStrap/skins/blue.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #2dc3e8;" rel="/App_Themes/BootStrap/skins/azure.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #03B3B2;" rel="/App_Themes/BootStrap/skins/teal.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #53a93f;" rel="/App_Themes/BootStrapcss/skins/green.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #FF8F32;" rel="/App_Themes/BootStrap/skins/orange.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #cc324b;" rel="/App_Themes/BootStrap/skins/pink.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #AC193D;" rel="/App_Themes/BootStrap/skins/darkred.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #8C0095;" rel="/App_Themes/BootStrap/skins/purple.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #0072C6;" rel="/App_Themes/BootStrap/skins/darkblue.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #585858;" rel="/App_Themes/BootStrap/skins/gray.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #474544;" rel="/App_Themes/BootStrap/skins/black.min.css">
+                                            </a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color: #001940;" rel="/App_Themes/BootStrap/skins/deepblue.min.css">
+                                            </a></li>
+                                        </ul>
+                                    </li>
+                                    <!--/Theme Selector Area-->
+                                    <li class="dropdown-footer"><a href="/Signout">退出登录 </a></li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul>
+                        <div class="setting">
+                            <a id="btn-setting" title="Setting" href="#"><i class="icon glyphicon glyphicon-cog">
+                            </i></a>
+                        </div>
+                        <div class="setting-container">
+                            <label>
+                                <input type="checkbox" id="checkbox_fixednavbar">
+                                <span class="text">固定顶部</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedsidebar">
+                                <span class="text">固定左边</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedbreadcrumbs">
+                                <span class="text">固定头部</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedheader">
+                                <span class="text">固定工具栏</span>
+                            </label>
+                        </div>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <div class="sidebar-header-wrapper">
+                    <input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+                </div>
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu" id="divSidebar">
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb" style="padding-top: 8px;" id="divLocation">
+                        <li><i class="fa fa-home"></i><a id="lnkHome" href="javascript:void(0);">首页</a></li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1 id="divCaption">
+                            Hello!
+                        </h1>
+                    </div>
+                    <!--Header Buttons-->
+                    <div class="header-buttons">
+                        <a title="隐藏左边菜单" class="sidebar-toggler" href="javascript:void(0);"><i class="fa fa-arrows-h">
+                        </i></a><a title="全屏" class="fullscreen" id="fullscreen-toggler" href="javascript:void(0);">
+                            <i class="glyphicon glyphicon-fullscreen"></i></a><a title="回主页" class="refresh"
+                                href="/Admin/Info/Index.aspx" target="fraMain"><i class="glyphicon glyphicon-home">
+                                </i></a><a title="刷新" class="forward" id="refresh-toggler" href="javascript:void(0);"
+                                    onclick="refresh();"><i class="glyphicon glyphicon-refresh"></i></a>
+                        <a title="前进" class="fullscreen" href="javascript:void(0);" onclick="javascript:history.go(1);">
+                            <i class="glyphicon  glyphicon-arrow-right"></i></a><a title="后退" class="refresh"
+                                href="javascript:void(0);" onclick="javascript:history.go(-1);"><i class="glyphicon  glyphicon-arrow-left">
+                                </i></a>
+                    </div>
+                    <!--Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+                    <asp:ContentPlaceHolder ID="cpBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+    </div>
+    <form id="Form1" runat="server">
+    </form>
+    <!--Basic Scripts-->
+    <script src="/JScripts/BootStrap/beyond.min.js"></script>
+    <script language="javascript">
+        //默认主框架高度。
+        var defaultFrameHeight = 0;
+        $(document).ready(function () {
+            var firstNav = "";
+            $.each(jsonNav, function (i, module) {
+                if (i == 0)
+                    firstNav = module.Caption;
+            });
+
+            //生成并定位导航子菜单。
+            renderNavCategory(0);
+
+            //默认IFrame设置。
+            defaultFrameHeight = $(".page-body").height() - 42;
+
+            $2("fraMain").src = "/Admin/Welcome/Index.aspx";
+            //重置屏幕大小
+            resetMainframeHeight('fraMain');
+            //定时获取消息。
+            //getNotice();
+            //setInterval(getNotice, 15000);
+        });
+
+        //生成并定位导航子菜单。
+        //index 当前导航索引号。
+        function renderNavCategory(index) {
+            //生成子菜单。
+            var html = "";
+            $.each(jsonNav, function (i, module) {
+                if (i == index) {
+                    var moduleCaption = module.Caption;
+                    $.each(module.List, function (i2, list) {
+                        var listCaption = list.Caption;
+                        var className = list.Class.length > 0 ? list.Class : "fa-plus-square";
+                        var tarIDText = "";
+                        if (list.TarID.length > 0)
+                            tarIDText = " <i for='" + list.TarID + "' class='task-item-red' id='divMenuTar_" + list.TarID + "'></i> ";
+                        html += "<li>";
+                        html += "<a href=\"javascript:void(0);\" class=\"menu-dropdown\">";
+                        html += "<i class=\"menu-icon fa " + className + "\"></i>";
+                        html += "<span class=\"menu-text\"> <b>" + list.Caption + tarIDText + "</b> </span>";
+                        html += "<i class=\"menu-expand\"></i>";
+                        html += "</a>";
+                        html += "<ul class=\"submenu\">";
+                        $.each(list.Items, function (i3, item) {
+                            var location = moduleCaption + "@" + listCaption + "@" + item.Caption;
+
+                            var tarIDText2 = "";
+                            if (item.TarID.length > 0)
+                                tarIDText2 = " <i for='" + list.TarID + "' class='task-item-red' id='divMenuTar_" + item.TarID + "'></i> ";
+
+                            html += "<li><a onclick=\"goUrl(this, '" + item.Caption + "', '" + location + "');\" href=\"" + item.Url + "\" target=\"fraMain\"><span class=\"menu-text\">" + item.Caption + tarIDText2 + "</span></a>";
+                        });
+                        html += "</ul>";
+                        html += "</li>";
+                    });
+
+                    $2("divCaption").innerHTML = "Hello!";
+                    $2("divLocation").innerHTML = "<li><i class=\"fa fa-home\"></i><a href=\"javascript:void(0);\">首页</a></li><li>" + moduleCaption + "</li>";
+                }
+            });
+
+            $("#divSidebar").html(html);
+            $2("fraMain").src = "about:blank";
+        }
+
+        //跳转到指定Url。
+        function goUrl(lnk, caption, location) {
+            //着色当前链接项。
+            $.each($("#divSidebar a"), function (i, a) {
+                $(a).removeClass("navbar-app-current-item");
+            });
+            $(lnk).addClass("navbar-app-current-item");
+
+            //设置标题。
+            $2("divCaption").innerHTML = caption;
+
+            //设置导航提示。
+            var locationHtml = "<li><i class=\"fa fa-home\"></i><a href=\"javascript:void(0);\">首页</a></li>";
+            $.each(location.split("@"), function (i, item) {
+                if (item.length > 0) {
+                    locationHtml += "<li>" + item + "</li>";
+                }
+            });
+            $2("divLocation").innerHTML = locationHtml;
+
+            //设置主框架的默认高度。
+            $("#fraMain").css("height", defaultFrameHeight + "px");
+        }
+
+        //智能设置框架高度。
+        function resetMainframeHeight(frameID) {
+            try {
+                if (null == frameID)
+                    frameID = "fraMain";
+                var ifm = $2(frameID);
+                var subWeb = document.frames ? document.frames[frameID].document : ifm.contentDocument;
+                if (ifm != null && subWeb != null) {
+                    var height = $(subWeb).height();
+                    height = Math.max(height, defaultFrameHeight);
+                    $(ifm).css("height", height + "px");
+                }
+            }
+            catch (e) { }
+        }
+
+        //刷新框架。
+        function refresh() {
+            $2("fraMain").src = $2("fraMain").contentWindow.location.href;
+            window.scrollTo(0, 0);
+        }
+
+        //获取消息。
+        var tmNoticeFlash = null;
+        var tmNoticeFlashIndex = 0;
+        function getNotice() {
+            //构建参数。
+            var sendData = {
+                "method": "getNotice"
+            };
+
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "/Api/MyHandler.ashx",
+                data: sendData,
+                timeout: 10 * 1000,
+                success: function (data, status) {
+                    if (data.r != "T")
+                        return;
+
+                    //重置父节点的角标属性、值。
+                    $.each($(".task-item-red"), function (i, item) {
+                        item.setAttribute("_total", "");
+                        item.innerHTML = "";
+                    });
+
+                    //{"r":"T", "d":[{"t":"系统消息","v":"3"},{"t":"待发货订单","v":"1"},{"t":"交易成功订单","v":"5"}]}
+                    var numTask = 0;
+                    var numTotal = 0;
+                    var msg = "";
+                    $.each(data.d, function (i, item) {
+                        var num = parseInt(item.v);
+                        if (num > 0) {
+                            numTask += 1;
+                            numTotal += num;
+                            msg += "<a href=\"" + item.url + "\" target=\"fraMain\"><span class=\"pull-left\">" + item.t + "&nbsp;<i>(" + item.v + ")</i></span></a>";
+                        }
+
+                        //如果有TarID属性值表示要渲染左边菜单的提示角标。
+                        if (null == item.TarID)
+                            return;
+
+                        var divMenu = $2("divMenuTar_" + item.TarID);
+                        if (null == divMenu)
+                            return;
+
+                        //设置角标。
+                        if (num > 0)
+                            divMenu.innerHTML = "(" + num + ")";
+
+                        //查找并设置父角标。
+                        var parentTarID = item.TarID.substr(0, item.TarID.length - 3);
+                        var divParentMenu = $2("divMenuTar_" + parentTarID);
+                        var numParentTotal = divParentMenu.getAttribute("_total");
+                        numParentTotal = numParentTotal.length > 0 ? parseInt(numParentTotal) : 0;
+                        numParentTotal += num;
+                        if (numParentTotal > 0)
+                            divParentMenu.innerHTML = "(" + numParentTotal + ")";
+                        divParentMenu.setAttribute("_total", numParentTotal);
+                    });
+
+                    $2("divNumTask").innerHTML = numTask;
+                    $(".notice-list").html(msg);
+                    $2("divNumTotalNotice").innerHTML = numTotal;
+                    var $divNoticeIcon = $("#divNoticeIcon");
+
+                    //结束上一次的动画效果。
+                    tmNoticeFlashIndex = 0;
+                    $divNoticeIcon.removeClass("notice-task-red");
+                    if (null != tmNoticeFlash)
+                        clearInterval(tmNoticeFlash);
+
+                    //动画效果显示右上角消息图标。
+                    if (numTotal > 0) {
+                        //显示效果。
+                        tmNoticeFlash = setInterval(function () {
+                            if (tmNoticeFlashIndex % 2 == 0)
+                                $divNoticeIcon.addClass("notice-task-red");
+                            else
+                                $divNoticeIcon.removeClass("notice-task-red");
+
+                            tmNoticeFlashIndex += 1;
+                        }, 300);
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

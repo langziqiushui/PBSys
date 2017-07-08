@@ -1,0 +1,12 @@
+E:\code\YX_Gather\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\code\YX_Gather\Core\bin\Debug\JK.YunMall.Core.dll
+E:\code\YX_Gather\Core\bin\Debug\JK.YunMall.Core.pdb
+E:\code\YX_Gather\Core\bin\Debug\Gma.QrCodeNet.Encoding.pdb
+E:\code\YX_Gather\Core\bin\Debug\Gma.QrCodeNet.Encoding.xml
+E:\code\YX_Gather\Core\obj\Debug\JK.YunMall.Core.dll
+E:\code\YX_Gather\Core\obj\Debug\JK.YunMall.Core.pdb
+E:\code\BBTIKU\WEBAPI\Core\bin\Debug\YX.Core.dll
+E:\code\BBTIKU\WEBAPI\Core\bin\Debug\YX.Core.pdb
+E:\code\BBTIKU\WEBAPI\Core\obj\Debug\YX.Core.dll
+E:\code\BBTIKU\WEBAPI\Core\obj\Debug\YX.Core.pdb
+E:\code\BBTIKU\WEBAPI\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache

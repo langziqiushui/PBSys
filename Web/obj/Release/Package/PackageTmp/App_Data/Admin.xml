@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menus>
+  <!--用户类别[AdminTypes]超级管理员=1,主编=2，编辑=3-->
+  <!--AppValue值为WPApps枚举值之一-->
+  <!--TarID值为Permissions枚举值之一-->
+
+  <Module UserType="1" Caption="后台管理" IsActived="1">
+    <List Caption="日志管理" Class=""  IsActived="1">
+      <Item Caption="站点日志"   Url="/Admin/Glo/LogList" IsActived="1"/>
+      <!--<Item Caption="安秀网日志"   Url="/Admin/Glo/LogList?c=1" IsActived="1"/>
+      <Item Caption="快啦网日志"   Url="/Admin/Glo/LogList?c=2" IsActived="1"/>
+      <Item Caption="一姐网日志"   Url="/Admin/Glo/LogList?c=3" IsActived="1"/>
+      <Item Caption="蓝企鹅网日志"   Url="/Admin/Glo/LogList?c=4" IsActived="1"/>
+      <Item Caption="游讯网日志"   Url="/Admin/Glo/LogList?c=5" IsActived="1"/>
+      <Item Caption="巴乌下载网日志"   Url="/Admin/Glo/LogList?c=6" IsActived="1"/>
+      <Item Caption="清清下载吧日志"   Url="/Admin/Glo/LogList?c=7" IsActived="1"/>
+      <Item Caption="497网日志"   Url="/Admin/Glo/LogList?c=8" IsActived="1"/>
+      <Item Caption="手机56日志"   Url="/Admin/Glo/LogList?c=9" IsActived="1"/>
+      <Item Caption="499日志"   Url="/Admin/Glo/LogList?c=10" IsActived="1"/>
+      <Item Caption="易玩日志"   Url="/Admin/Glo/LogList?c=11" IsActived="1"/>
+      <Item Caption="391K日志"   Url="/Admin/Glo/LogList?c=12" IsActived="1"/>
+      <Item Caption="pp8日志"   Url="/Admin/Glo/LogList?c=13" IsActived="1"/>
+      <Item Caption="草鞋网日志"   Url="/Admin/Glo/LogList?c=14" IsActived="1"/>-->
+    </List>
+    <List Caption="屏蔽管理"  Class="fa-stack-exchange"  IsActived="1">
+      <Item Caption="屏蔽管理"   Url="/Admin/Glo/PBConfigList" IsActived="1"/>
+    </List>
+    <List Caption="系统管理"  Class="fa-stack-exchange"  IsActived="1">
+      <Item Caption="系统配置"   Url="/Admin/Glo/DBConfig" IsActived="1"/>
+    </List>
+   
+  </Module>
+
+
+  <Module UserType="2,3" Caption="后台管理" IsActived="1">
+    <List Caption="屏蔽管理"  Class="fa-stack-exchange"  IsActived="1">
+      <Item Caption="屏蔽管理"   Url="/Admin/Glo/PBConfigList" IsActived="1"/>
+    </List>
+  </Module>
+</Menus>

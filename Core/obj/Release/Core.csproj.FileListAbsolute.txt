@@ -1,0 +1,8 @@
+E:\code\BBTIKU\WEBAPI\Core\bin\Release\YX.Core.dll
+E:\code\BBTIKU\WEBAPI\Core\bin\Release\YX.Core.pdb
+E:\code\BBTIKU\WEBAPI\Core\bin\Release\Google.ProtocolBuffers.dll
+E:\code\BBTIKU\WEBAPI\Core\bin\Release\JsonSeralize.dll
+E:\code\BBTIKU\WEBAPI\Core\bin\Release\NPOI.dll
+E:\code\BBTIKU\WEBAPI\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+E:\code\BBTIKU\WEBAPI\Core\obj\Release\YX.Core.dll
+E:\code\BBTIKU\WEBAPI\Core\obj\Release\YX.Core.pdb

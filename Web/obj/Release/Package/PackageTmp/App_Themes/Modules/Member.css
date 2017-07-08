@@ -1,0 +1,68 @@
+﻿.categoryTree{width:650px; height:300px; overflow:scroll; display:none; position:absolute; left:0px; top:0px; background-color:white; padding:5px;}
+.categoryTreeBack{width:100px; font-size:16px; color:#5db2ff; text-align:right; position:absolute; bottom:0px; right:8px; cursor:pointer;}
+
+.product-property-add{ cursor:pointer; margin:10px 10px 0px 10px;   border: 1px dashed #999; color: #999; display: block; font: 700 46px/40px arial; text-align: center;}
+.product-property-table td{padding:3px 10px; text-align:center;}
+.product-property-table td input{ text-align:center;}
+.product-property-trCaption td{ font-weight:bold;}
+ 
+/** 订单详情 开始 **/
+.order-warp{background:#fff; width:1300px; padding-bottom:20px; float:left;}
+.order-detail-content{width:96%; margin:0px auto; background:#fff;}
+.order-status{width:800px; clear:both; position:relative; height:50px; margin-bottom:20px; margin: 0 auto;}
+.order-status dl{float:left; font-size:12px; color:#666; width:200px; margin-top:18px; position:relative; z-index:9;}
+.order-status dl dt{text-align:center; height:16px;}
+.order-status dl dt i{display:inline-block; width:30px; height:16px; background:url(Images/Mall/dot-gray-icon.png) no-repeat;}
+.order-status dl dd{text-align:center; padding-top:6px;}
+.order-status dl.order-status-cur{color:#0067C0;}
+.order-status dl.order-status-cur  dt i{display:inline-block; width:30px; height:16px; background:url(Images/Mall/dot-blue-icon.png) center;}
+.order-status-line{position:absolute; width:100%; height:4px; background:#eee; left:0px; top:25px; z-index:1;}
+.order-status-dot-left{position:absolute; left:0px; top:23px; width:8px; height:8px; background:url(Images/Mall/dot-icon.png) no-repeat;}
+.order-status-dot-riht{position:absolute; right:0px; top:23px; width:8px; height:8px; background:url(Images/Mall/dot-icon.png) no-repeat;}
+.order-menu{width:100%; clear:both; height:30px; line-height:30px; font-size:14px; color:#555; margin-top:15px;}
+.order-tab{border-top:0px solid #eee; border-left:0px solid #eee;margin: 10px 0px;}
+.order-tab td{border-bottom:0px solid #eee; border-right:0px solid #eee; font-size:12px; color:#686868; font-family:Arial, Helvetica, sans-serif; padding:0px 1px; line-height:20px;}
+.order-tab a{ color:#0067C0; text-decoration:none;}
+.order-tab a:hover{text-decoration:underline;} 
+.order-operating{width:100%; clear:both; text-align:center; margin-top:20px;}
+
+.order-button{border:0px; font-size:12px; color:#fff; font-weight:bold; height:25px; line-height:25px; text-align:center; background:#0067C0; cursor:pointer; padding:0 20px; display:inline-block; margin-right:10px;}
+.order-button:hover{ background:#3399ff;}
+.order-express-delivery{ width:90%; margin:10px auto; height:30px; line-height:30px; border-bottom:1px solid #eee; font-weight:bold; color:#686868; overflow:hidden;}
+.order-express-delivery-info{float:left; width:500px;}
+.order-express-delivery-date{float:left; width:150px;}
+.order-express-delivery-operating{float:left; width:150px;}
+.order-express-delivery-box{ clear:both; width:100%; padding-bottom:10px;}
+.order-express-delivery-list{width:90%; margin:0px auto; clear:both; overflow:hidden; color:#686868;}
+.order-express-delivery-list ul li{ height:25px; line-height:25px;}
+.order-product-pic img{ width:50px; height:50px; border:1px solid #eee;}
+
+.productListTotale{width:100%; text-align:right; margin-top:5px;}
+.productListTotale span{color: #f60;font-weight: bold;}
+/** 订单详情 结束 **/
+
+.Basic-info-title
+{
+    color:#737373;
+    border-bottom:1px solid #CCCCCC; 
+    font-size:18px;
+    height:40px;
+    margin-bottom:10px;
+    display:block;
+    width:100%;
+    padding-left:30px;
+}
+.order-tab-product{border-top:1px solid #eee; border-left:1px solid #eee;margin-bottom: 20px;margin-top: 20px;}
+.order-tab-product td{border-bottom:1px solid #eee; border-right:1px solid #eee; font-size:12px; color:#686868; font-family:Arial, Helvetica, sans-serif; padding:0px 8px; line-height:20px;}
+.order-tab-product td.order-title{ background:#EEEEEE; color:#777777; font-size:14px; font-weight:bold; }
+.order-tab-product td.order-pirce{ color:#f60; font-weight:bold;}
+
+.order-edit-linkMan{width:20px; height:20px;cursor: pointer;}
+.myChildrenAgent-countInfo u{color:Red; font-weight:bold; display:inline-block; padding:0px 5px;}
+
+.fs_SupplierAuditDialog{clear:both; border:1px solid #ddd; margin-top:10px; padding:10px;}
+.fs_SupplierAuditDialog legend{font-size:13px; margin-bottom:0px !important; width:auto !important; border-width:0px;}
+.fs_SupplierAuditDialog legend span{color:Red; font-style:normal;}
+.fs_SupplierAuditDialog div{height:100px; overflow:auto;}
+.fs_SupplierAuditDialog div p{ padding:0px; margin:0px; line-height:20px;}
+.fs_SupplierAuditDialog span{display:block; line-height:100px;}

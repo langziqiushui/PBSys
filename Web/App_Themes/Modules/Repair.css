@@ -1,0 +1,37 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0;padding: 0}
+em,dfn{font-style:normal}
+ul{list-style:none;}
+li,dl,dt{list-style:none}
+img{border:0;}
+i{ font-style:normal;}
+em{font-style:normal}
+strong{ font-weight:bold; font-weight:700;}
+input{ font-size:12px; vertical-align:middle; outline:none;}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+a:link, a:visited {text-decoration: none;}
+a{text-decoration:none;blr:expression_r(this.onFocus=this.blur())}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+
+/*错误提示*/
+.error{width:100%;clear:both;}
+.error dl{width:500px; margin:0px auto;}
+.error dl dt{float:left; width:78px; height:96px; margin-right:20px; margin-top:8px;}
+.error dl dd{float:left; font-size:14px; font-family:Arial, Helvetica, sans-serif; margin-top:10px;}
+.error dl dd p{display:block;}
+.error-name{font-size:24px; font-family:"微软雅黑"; color:#333;}
+.error-operating{width:100%; clear:both; line-height:20px; padding-top:10px;}
+.error-reason{ padding-top:10px; color:#666;}
+.error-operating strong{display:block;}
+.error-operating span{display:block; color:#666; padding-top:5px;}
+.error-operating span a{color:#47a8ef; text-decoration:none;}
+.error-operating span a:hover{text-decoration:underline;}
+
+
+/*错误横排提示*/
+.error-horizontal{width:100%; clear:both;}
+.error-horizontal p{display:block; width:100%; text-align:center; font-size:14px; color:#555;}
+.error-horizontal p.error-horizontal-name{font-size:24px; font-family:"微软雅黑"; color:#333; padding:15px 0px;}
+.error-horizontal-operating{width:100%; clear:both; padding:15px 0px;}
+.error-horizontal-operating a{font-size:14px; color:#47a8ef; display:inline-block; padding:0px 10px;}
+.error-horizontal-operating a:hover{text-decoration:underline;}

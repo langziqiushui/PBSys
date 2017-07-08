@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Services.csproj]
+SCC_Aux_Path = "\\192.168.1.3\jikee"
+SCC_Project_Name = "$/YunMall.root/YunMall/Services", OFWBAAAA

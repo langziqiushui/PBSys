@@ -1,0 +1,16 @@
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Web.Framework.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Web.Framework.pdb
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\Google.ProtocolBuffers.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Core.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Domain.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Factory.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.IServices.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\NPOI.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\JsonSeralize.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Core.pdb
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Domain.pdb
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.Factory.pdb
+E:\code\BBTIKU\WEBAPI\Web.Framework\bin\Release\YX.IServices.pdb
+E:\code\BBTIKU\WEBAPI\Web.Framework\obj\Release\Web.Framework.csprojResolveAssemblyReference.cache
+E:\code\BBTIKU\WEBAPI\Web.Framework\obj\Release\YX.Web.Framework.dll
+E:\code\BBTIKU\WEBAPI\Web.Framework\obj\Release\YX.Web.Framework.pdb

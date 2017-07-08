@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F14310B-6FC6-4CD0-A1FB-5BDCB0ECFF33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YX.Core</RootNamespace>
+    <AssemblyName>YX.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>..\MWeb\bin\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonSeralize">
+      <HintPath>..\..\旅游景点2015\Trip2015\Core\bin\Debug\JsonSeralize.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\..\旅游景点2015\Trip2015\Core\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\ConfigAppSettings.cs" />
+    <Compile Include="Config\ConfigUtil.cs" />
+    <Compile Include="ContextDBPool\ContextDBPool.cs" />
+    <Compile Include="ContextDBPool\ContextDBPoolObject.cs" />
+    <Compile Include="CoreUtil.cs" />
+    <Compile Include="Cryptography\AES.cs" />
+    <Compile Include="Cryptography\CryptographyManager.cs" />
+    <Compile Include="Cryptography\DES2QueryString.cs" />
+    <Compile Include="Cryptography\ICryptography.cs" />
+    <Compile Include="Cryptography\MD5.cs" />
+    <Compile Include="Cryptography\MD5SHA256.cs" />
+    <Compile Include="Cryptography\StrongSHA256.cs" />
+    <Compile Include="Domain\BaseDomain.cs" />
+    <Compile Include="Domain\DomainUtil.cs" />
+    <Compile Include="Domain\EntityCloner.cs" />
+    <Compile Include="Domain\EntityPropertyChangedEventArgs.cs" />
+    <Compile Include="Domain\EntityStates.cs" />
+    <Compile Include="Domain\MyBinder.cs" />
+    <Compile Include="Domain\MyParameter.cs" />
+    <Compile Include="Domain\OjbectBase.cs" />
+    <Compile Include="Domain\PropertyComparer.cs" />
+    <Compile Include="EnumDescription.cs" />
+    <Compile Include="Exceptions\AppException.cs" />
+    <Compile Include="Exceptions\ExceptionLevels.cs" />
+    <Compile Include="ExtensionFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialize\DataTransfer.cs" />
+    <Compile Include="Serialize\SerializableDictionary.cs" />
+    <Compile Include="Serialize\XmlDataTransfer.cs" />
+    <Compile Include="Util\BarCode.cs" />
+    <Compile Include="Util\BarCodeUtil.cs" />
+    <Compile Include="Util\CookieManager.cs" />
+    <Compile Include="Util\ExcelUtil.cs" />
+    <Compile Include="Util\HttpUtil.cs" />
+    <Compile Include="Util\HZToPinYin.cs" />
+    <Compile Include="Util\ImageUtil.cs" />
+    <Compile Include="Util\LBSUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\GetuiServerApiSDK.dll" />
+    <Content Include="bin\Debug\Gma.QrCodeNet.Encoding.dll" />
+    <Content Include="bin\Debug\Gma.QrCodeNet.Encoding.pdb" />
+    <Content Include="bin\Debug\Gma.QrCodeNet.Encoding.xml" />
+    <Content Include="bin\Debug\Google.ProtocolBuffers.dll" />
+    <Content Include="bin\Debug\JsonSeralize.dll" />
+    <Content Include="bin\Debug\NPOI.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

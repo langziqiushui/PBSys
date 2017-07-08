@@ -1,0 +1,103 @@
+﻿html{color: #333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0,0,0,0); font-family:"Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;}
+body{font-family:"Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0;padding: 0}
+em,dfn{font-style:normal}
+ul{list-style:none;}
+li,dl,dt{list-style:none}
+img{border:0;}
+i{ font-style:normal;}
+em{font-style:normal}
+strong{ font-weight:bold; font-weight:700;}
+input{ font-size:12px; vertical-align:middle; outline:none;}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+a:link, a:visited {text-decoration: none;}
+a{text-decoration:none;blr:expression_r(this.onFocus=this.blur())}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+
+
+/*==========懒猫送货单==========*/
+.lanmao-souhuodan-wrap{width:100%; clear:both; margin:0px auto;}
+
+/*头部*/
+.header{width:100%; clear:both; overflow:hidden;height:50px;position:relative;}
+.logo{float:left; margin-left:10px; margin-top:10px;}
+.lanmao-songhuo-name{position:absolute;top:0px;color:#333; font-size:22px; height:50px; line-height:50px; right:200px;}
+.lanmao-fenye{float:right;margin-right:10px;margin-top:15px;font-size:14px; height:25px; line-height:25px; color:#666;}
+
+/*订单信息*/
+.lanmao-order-info{width:100%; clear:both; overflow:hidden; margin-top:10px;}
+.lanmao-order-info-left{float:left; margin-left:10px;}
+.lanmao-order-info-left p{display:block; font-size:14px; color:#666; padding-bottom:5px;}
+.lanmao-order-title{color:#333;}
+.lanmao-order-info-right{float:right; margin-right:10px;}
+.lanmao-order-info-right img{height:60px; width:300px}
+
+/*客户信息*/
+.lanmao-kehu-info{width:100%; clear:both; overflow:hidden; margin-top:10px;}
+.lanmao-kehu-info-left{float:left; margin-left:10px;}
+.lanmao-kehu-info-left p{display:block; font-size:14px; color:#666; padding-bottom:5px;}
+.lanmao-kehu-title{color:#333;}
+.lanmao-kehu-info-right{float:right; margin-right:10px;}
+.lanmao-kehu-info-right p{display:block; font-size:14px; color:#666; padding-bottom:5px;}
+
+/*商品信息*/
+.lanmao-order-shanpin{width:100%; clear:both; padding-top:10px;}
+.lanmao-shanpin-tab{width:98%; margin:0px auto; border-top:1px solid #ddd; border-left:1px solid #ddd;}
+.lanmao-shanpin-tab td{border-bottom:1px solid #ddd; border-right:1px solid #ddd; text-align:center; color:#666; font-size:14px;}
+.lanmao-shanpin-title td{font-size:14px; text-align:center; color:#000;}
+.lanmao-shanpin-tab td.lanmao-shanpin-name{text-align:left; padding:0 5px;}
+.lanmao-shanpin-heji{width:100%;clear:both;}
+.lanmao-shanpin-heji-tab{width:98%; margin:0px auto; border:1px solid #ddd; border-top:none; height:40px; line-height:40px; font-size:16px;}
+.lanmao-shanpin-heji-tab span{float:left; margin-left:10px; color:#000;}
+.lanmao-shanpin-heji-tab span.lanmao-shanpin-price{float:right; margin-right:10px;}
+
+/*底部*/
+.footer{width:100%; clear:both; margin-top:10px;}
+.footer-left{float:left; margin-left:10px; width:50%;}
+.footer-left-ganxie{font-size:18px; font-style:italic;}
+.footer-left-tishi{font-size:14px;}
+.footer-left-tishi-neirong{ font-size:14px;}
+.footer-left-tishi-neirong p{display:block; padding-left:20px; font-size:14px;}
+.footer-left-tishi-neirong p.footer-left-tishi-zhuyi{font-size:16px; font-style:italic; padding-top:5px;}
+.footer-right{float:right; width:200px; margin-top:10px;}
+.lanmao-erweima{width:200px; clear:both;}
+.lanmao-erweima dl{width:200px;}
+.lanmao-erweima dl dt{width:100%; text-align:center;}
+.lanmao-erweima dl dd{width:100%; font-size:14px; text-align:center; padding-top:3px;}
+
+/*打印*/
+.lanmao-print{width:100%; clear:both; text-align:center; padding-top:20px;}
+.lanmao-print input{width:100px; height:30px;  font-family:"微软雅黑"; border:1px solid #ccc; background:#f8f8f8; border-radius:5px; cursor:pointer;}
+.lanmao-print input:hover{border:1px solid #999;}
+
+/*====================退货申请====================*/
+.tuihuo-order{width:100%; clear:both; background:#fff; border-bottom:1px solid #e6e6e6; padding:10px 0px;}
+.tuihuo-order ul li{font-size:12px; width:96%; margin:0px auto; color:#333; line-height:20px;}
+.tuihuo-order ul li span{color:#999;}
+.tuihuo-order ul li a{color:#999;}
+.tuihuo-chanpin{width:100%; border:1px solid #e6e6e6; background:#fff; border-bottom:1px solid #e6e6e6; overflow:hidden; margin-top:10px;}
+.tuihuo-chanpin-list{float:right; width:96%; }
+.tuihuo-chanpin-list ul li{width:100%; overflow:hidden; padding:10px 0px;border-bottom:1px solid #e6e6e6;}
+.tuihuo-chanpin-list ul li:last-child{ border-bottom:none;}
+.tuihuo-chanpin-select-gray{float:left; width:22px; height:22px; border:1px solid #ccc; border-radius:20px; margin-right:10px; margin-top:15px;}
+.tuihuo-chanpin-select-cur{float:left;width:21px; height:21px; background:url(Images/LCat/dui-icon.png) no-repeat; background-size:100%;margin-right:10px; margin-top:15px;}
+.tuihuo-chanpin-pic{float:left; width:50px; height:50px; border:1px solid #eee;}
+.tuihuo-chanpin-pic img{ width:50px; height:50px;}
+.tuihuo-chanpin-name{float:left; font-size:12px; color:#333; width:50%; margin-left:10px;}
+.tuihuo-chanpin-price{float:right; font-size:12px; color:#999; margin-right:10px;}
+.tuihuo-chanpin-price p{display:block; text-align:right;}
+.tuihuo-chanpin-price p span{font-size:14px; color:#666;}
+.tuikuan-fangshi{width:100%; margin-top:10px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; background:#fff;}
+.tuikuan-fangshi h3{display:block; height:35px; line-height:35px; font-size:14px; font-weight:bold; text-indent:10px; border-bottom:1px solid #e6e6e6;}
+.tuikuan-fangshi ul li{width:100%; overflow:hidden; padding:15px 0px;}
+.tuikuan-fangshi ul li a{float:left; width:33%; text-indent:10px; font-size:14px; color:#333;}
+.tuikuan-fangshi ul li a i{display:inline-block; width:21px; height:21px; border:1px solid #ccc; border-radius:22px; vertical-align:middle; margin-right:5px;}
+.tuikuan-fangshi ul li a.tuikuan-fangshi-cur i{width:22px; height:22px; background:url(Images/LCat/dui-icon.png) no-repeat; background-size:100%; border:none;}
+.tuikuan-shuoming{width:100%; margin-top:10px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; background:#fff;}
+.tuikuan-shuoming h3{display:block; height:35px; line-height:35px; font-size:14px; font-weight:bold; text-indent:10px; border-bottom:1px solid #e6e6e6;}
+.tuikuan-shuoming ul li{width:100%; overflow:hidden; padding:15px 0px; text-align:center}
+.tuikuan-shuominginput{border:1px solid #e6e6e6; width:92%;  border-radius:5px; padding:5px; line-height:20px;}
+.tuikuan-button{width:100%; clear:both; padding:20px 0px; text-align:center;}
+.tuikuan-button a{width:90%; display:inline-block; height:40px; line-height:40px; color:#fff; text-align:center; background:#F5A800; border-radius:5px; font-size:14px;}
+textarea {-webkit-appearance: none;}

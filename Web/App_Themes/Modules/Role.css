@@ -1,0 +1,18 @@
+﻿.role_bar{width:100%; padding:0px 10px; border-bottom:solid 2px #f5f5f5; border:solid 1px #ddd; padding:15px 10px;}
+#chkAdmin td{padding:3px !important; height:20px;}
+.tabPermissionOuter{width:98%; margin:10px auto;}
+.tabPermission{width:100%; border-top:1px solid #e6e6e6; border-left:1px solid #e6e6e6;}
+.tabPermission_middle{ text-align:center;}
+.tabPermission td{border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}
+.tabPermission p{width:150px; height:22px; float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.tabPermission fieldset{border:2px solid #e6e6e6; width:98%; margin-top:8px; margin-bottom:8px; padding:15px 5px 5px 5px;}
+.tabPermission fieldset legend{ width:150px; height:20px; margin-left:20px; background-color:#ecebeb; font-weight:bold; line-height:20px; border:solid 1px #e6e6e6; text-align:center;}
+.tabPermission_main{padding:8px;}
+.tabPermission_alt td{ background-color:#fbedd9 !important;}
+
+.role-split{border-bottom:solid 1px #ddd; }
+
+#chkRoles{width:100%;}
+.sr_myRoles{border:2px solid #e6e6e6; margin-top:8px; margin-bottom:8px; padding:15px;}
+.sr_myRoles legend{font-weight:bold; line-height:20px; font-size:13px; margin-bottom:0px !important; width:auto !important; border-width:0px;}
+.sr_myRoles td{height:25px;}

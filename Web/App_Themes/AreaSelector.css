@@ -1,0 +1,33 @@
+﻿.mall-Delivery-area{border:solid 2px #c4d5df; width:680px; background-color:White; position:absolute; z-index:99998; display:none;}
+.mall-Delivery-area p{height:33px; background-color:#e9f1f4; border-bottom:solid 1px #c4d5df;}
+.mall-Delivery-area p b{width:200px; display:block; height:33px; float:left; padding-left:5px; line-height:33px;}
+.mall-Delivery-area p span{width:25px; display:block; height:33px; float:right; text-align:right; padding-right:8px; cursor:pointer; line-height:33px; font-size:16px;}
+.mall-Delivery-area p span:hover{color:#fb6e52;}
+.mall-Delivery-area i{border-top:solid 1px #c4d5df; height:39px; font-style:normal; padding-right:15px; line-height:35px; display:block; text-align:right;}
+.mall-Delivery-area i span{ cursor:default;}
+.mall-Delivery-area i input {height:12px; overflow:hidden;}
+.mall-Delivery-area i b {font-weight:normal; margin-right:450px; cursor:default;}
+
+.mall-Delivery-area div{padding:5px 0px 5px 5px; overflow:auto;}
+.mall-Delivery-area div dl{overflow:visible; clear:both; padding:0px; margin:0px;}
+.mall-Delivery-area div dl dt{width:70px; float:left;}
+.mall-Delivery-area div dl dt input {height:12px; overflow:hidden;}
+.mall-Delivery-area div dl dt label{ font-weight:bold;}
+.mall-Delivery-area div dl dd{width:580px; float:left; text-align:left;}
+.mall-Delivery-area div dl dd span{width:108px; height:30px; overflow:hidden; display:inline-block;}
+.mall-Delivery-area div dl dd span b{color:#f60; font-weight:normal;}
+.mall-Delivery-current{border:solid 1px #f7e4a5; background-color:#fffec6;}
+.mall-Delivery-area div dl dd span em{ cursor:pointer; width:25px; padding-left:8px; display:inline-block;}
+.mall-Delivery-area div dl dd span em:hover{color:#11a9cc;}
+.mall-Delivery-area-item-gray{color:gray;}
+.mall-Delivery-area-item-gray label{text-decoration:line-through !important;}
+.mall-Delivery-area div dl dd span input{height:12px; overflow:hidden;}
+
+.mall-Delivery-childCity{width:280px; position:absolute; display:none; z-index:99999; border:solid 1px #f7e4a5; background-color:#fffec6; padding:10px 5px 0px 10px;}
+.mall-Delivery-childCity span{ display:inline-block; height:25px; padding-right:7px;}
+.mall-Delivery-childCity-gray{color:gray;}
+.mall-Delivery-childCity-gray label{text-decoration:line-through !important;}
+.mall-Delivery-childCity p{margin-top:5px; text-align:right; padding:0px; height:15px; overflow:hidden;}
+.mall-Delivery-childCity p span{font-size:14px; cursor:pointer; display:inline-block; width:30px; height:15px;}
+.mall-Delivery-childCity p span:hover{color:#fb6e52;}
+.mall-Delivery-childCity div input{height:12px; overflow:hidden;}

@@ -1,0 +1,94 @@
+﻿.myTableContainer123{ width:100%; clear:both; margin:15px auto; overflow:hidden;}
+.myTable123{width:100%; border-top:1px solid #ddd; border-left:1px solid #ddd; background:#FFF}
+.myTable123 tr{ background:#fff;}
+.myTable123 td{ text-align:center; border-bottom:1px solid #ddd; border-right:1px solid #ddd; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#222; padding:8px 5px; line-height:18px; word-wrap: break-word; word-break:break-all;}
+.myTable123 td i{color:Red; font-style:normal; background:none; float:none;}
+.myTable123 td em{color:green; font-style:normal; background:none; float:none;}
+.myTable123 tr.myTable123_rc td{ height:20px; text-align:center; font-weight:bold; color:#555; border-bottom:solid 2px #ffce55  ;}
+/* background-color:#57b5e3; color:White; */
+.myTable123_rb{height:45px; border-width:0px !important;}
+.myTable123_rb:hover{background:#fff  !important;}
+.myTable123_rb table td{border-width:0px !important;}
+.myTable123_rb tr:hover{background:#fff  !important;}
+.myTable123_currentTr{ background-color:#2dc3e8 !important; }
+.myTable123_currentTr td{color:White !important;}
+.myTable123_currentTr font{color:White !important;}
+.myTable123_currentTr td a{color:White !important;}
+.myTable123_action{ text-align:left !important; }
+.myTable123_action label{padding:0px 5px;}
+.myTable123_pager{width:560px; text-align:right; }
+.myTable123_ah{overflow:hidden; text-overflow:ellipsis; height:15px; white-space:nowrap; word-wrap:break-word; word-break:break-all;}
+.myTable123_aw{ white-space:normal; padding:5px 0px; overflow:auto; word-wrap:normal; word-break:normal;}
+.myTable123_overflowHidden{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.myTable123_link234{color:#1F3D99; text-decoration:underline; cursor:pointer;}
+.myTable123_whiteSpace{width:4px; font-size:1px; display:inline-block;}
+
+.mySearch98562{width:98%; clear:both; margin:15px auto; overflow:hidden;}
+.myTable123_editColumn a, .mySearch98562 a{height:20px; line-height:20px; padding:0px 5px; display:inline-block; text-align:center; font-size:12px; color:#2083BF;}
+.myTable123_editColumn a:hover, .mySearch98562 a:hover{background:#5fafeb; color:White;}
+.myTable123_button{display:inline-block; border:0px; padding:0px 5px; background:#5db2ff; height:25px; line-height:25px; text-align:center; font-size:12px; font-family:"微软雅黑"; color:#fff;}
+.myTable123_button:hover{background:#1198D9;}
+.mySearch98562 a{ display:inline-block; vertical-align:middle;}
+           
+.myTable123_noData{height:80px; line-height:80px; font-family:微软雅黑; color:gray; font-size:20px; text-align:center;}
+.myTable123_noData i{color:gray !important;}
+             
+/* --------- 分页 -----------------------------------------------*/
+.myTablePager{overflow:hidden; font-size:12px; text-align:right; float:right; height:25px;}
+.myTablePager a{ box-sizing:content-box; float:left; border:1px solid #B6BFC6; background:#f8f8f8; padding:0px 8px; height:21px; line-height:23px; text-align:center; margin-right:5px; color:#333; font-family:Arial, Helvetica, sans-serif,宋体; margin-top:2px;}
+.myTablePager a:hover{border:1px solid #FFB17E; background:#FFF4D9; color:#f60;}
+.myTablePager a.prevPageGray, .myTablePager a.prevPage, .myTablePager a.nextPageGray, .myTablePager a.nextPage, .myTablePager a.firstPageGray, .myTablePager a.firstPage, .myTablePager a.firstPage:hover, .myTablePager a.lastPageGray, .myTablePager a.lastPage, .myTablePager a.lastPage:hover{ float:left; border:1px solid #B6BFC6; width:10px; background:url(Images/CommonIcon.png) no-repeat scroll -54px -130px;}
+.myTablePager a.firstPageGray{ background-position:-3px -129px; cursor:default;}
+.myTablePager a.firstPage{ background-position:-28px -129px;}
+.myTablePager a.firstPage:hover{ background-position:-28px -160px;}
+.myTablePager a.lastPageGray{ background-position:-275px -129px;  cursor:default;}
+.myTablePager a.lastPage{ background-position:-243px -129px;}
+.myTablePager a.lastPage:hover{ background-position:-243px -160px;}
+
+.myTablePager a.prevPage{ background-position:-78px -130px;}
+.myTablePager a.prevPage:hover{ background-position:-107px -130px;}
+.myTablePager a.nextPageGray{ background-position:-148px -130px;}
+.myTablePager a.nextPage{ background-position:-186px -130px;}
+.myTablePager a.nextPage:hover{ background-position:-216px -130px;}
+.myTablePager a.currentPage{border:1px solid #2F7AB2; background:#299BE4; color:#fff;}
+
+.myTablePager p{ height:25px; font-size:12px; line-height:25px; float:left; overflow:hidden; text-align:right;}
+.myTablePager p strong{color:#fd6600; }
+.myTablePager p .pagerNum{ box-sizing:content-box; border:1px solid #B6BFC6;padding:0px 3px; height:20px; line-height:20px; background:url(Images/Common/OrderIcon.png) #fff repeat-x scroll 0px -52px; padding-left:5px; width:20px; text-align:center;}
+.myTablePager p .pagerNum:focus{ border:1px solid #9AADBA; background:#F1F7FC;}
+.myTablePager p .pagerOk{ border-width:0px ;height:23px; line-height:23px; text-align:center; font-size:12px; color:#fff; background:#299BE4; width:45px; cursor:pointer;}
+.myTablePager p .pagerOk:hover{ background-color:#4ea5e6;}
+
+.groupInfo{ font-family:微软雅黑; font-size:14px; color:Red;}
+
+/*数据编辑器*/
+#divDataEditor{text-align:left;}
+#divDataEditor dl{margin:2px 0px 3px 0px;}
+#divDataEditor dl.de_field{width:250px; height:58px; overflow:hidden; float:left; padding-right:30px; _display:inline;}
+#divDataEditor dl dt{font-family:微软雅黑 !important; font-size:13px; color:#000000; height:23px;}
+#divDataEditor dl dt span, #divDataEditor fieldset legend i{color:Red; font-family:Verdana,宋体; font-style:normal;}
+#divDataEditor dl dd{margin-bottom:5px; font-family: Arial,Helvetica,sans-serif; font-size:12px;}
+#divDataEditor dl dd select{width:220px;}
+#divDataEditor ol{padding:15px 0px 5px 0px !important; clear:both; line-height:25px;}
+#divDataEditor ol{color:Red; font-size:13px; padding:0px; margin:0px; line-height:18px;}
+#divDataEditor ol #btAccept{width:100px;}
+#divDataEditor ol #btCancel{width:60px;}
+#divDataEditor .de_caption{clear:both; float:left; width:98%; text-indent:10px; font-weight:bold; height:30px; line-height:30px; background:#f6f6f6; border-bottom:1px solid #e6e6e6; margin-top:10px; margin-bottom:10px; font-size:14px; font-family:微软雅黑;}
+#divDataEditor .de_captionsubmenu{ border-top:1px solid #eee; margin-top:10px;}
+#divDataEditor .de_line{width:98%; height:1px; font-size:0px; border-top:solid 1px #ddd; margin:15px 0px 10px 0px;}
+#divDataEditor .de_split{width:90%; clear:both; height:1px; font-size:0px; border-top:dashed 1px #ABADB3; margin:3px 0px;}
+#divDataEditor fieldset{border:solid 1px #cccccc;}
+
+/* --------- 自动完成 -----------------------------------------------*/
+.myAutocomplete{border:solid 1px gray; padding:3px; width:249px; font-size:12px; background-color:White; position:absolute; z-index:99999999; display:none;}
+.ap-item-alt{ background-color:#0A246A; color:White;}
+.myAutocomplete p{height:24px; padding:0px 2px 0px 2px; color:#325e7f; font-family:微软雅黑,verdana; cursor:default; clear:both; border-bottom:dotted 1px #e0e0e0;}
+.myAutocomplete p b{width:80%; height:24px; line-height:24px; float:left; display:block; font-weight:normal; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.myAutocomplete p i{width:20%; height:24px; line-height:24px; float:right; font-size:12px; display:block; font-style:normal; text-align:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; background:none;}
+.ap-item-mo{ background-color:#4778da; color:white !important; font-weight:bold;}
+.myAutocomplete p strong{font-weight:normal;}
+.myAutocomplete-cancel, .myAutocomplete-cancel-over{width:1px; height:1px; cursor:pointer; display:none; position:absolute; z-index:100; background:url('') white no-repeat right 4px;}
+.myAutocomplete-cancel-over{background-position:right -13px !important;}
+
+
+.dialog-container{padding:12px 18px; background-color:White;}

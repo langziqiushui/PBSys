@@ -1,0 +1,152 @@
+﻿.categoryTree{width:650px; height:300px; overflow:scroll; display:none; position:absolute; left:0px; top:0px; background-color:white; padding:5px;}
+.categoryTreeBack{width:100px; font-size:16px; color:#5db2ff; text-align:right; position:absolute; bottom:0px; right:8px; cursor:pointer;}
+
+.product-property-add{ cursor:pointer; margin:10px 10px 0px 10px;   border: 1px dashed #999; color: #999; display: block; font: 700 46px/40px arial; text-align: center;}
+.product-property-table td{padding:3px 10px; text-align:center;}
+.product-property-table td input{ text-align:center;}
+.product-property-trCaption td{ font-weight:bold;}
+ 
+/** 订单详情 开始 **/
+.order-warp{background:#fff; padding-bottom:20px;}
+.order-detail-content{width:96%; margin:0px auto; background:#fff;}
+.order-status{width:1000px; clear:both; position:relative; height:50px; margin-bottom:20px; margin: 0 auto;}
+.order-status dl{float:left; font-size:14px; font-weight:bold; color:#666; width:200px; margin-top:18px; position:relative; z-index:9;}
+.order-status dl dt{text-align:center; height:16px;}
+.order-status dl dt i{display:inline-block; width:30px; height:16px; background:url(Images/Mall/dot-gray-icon.png) no-repeat;}
+.order-status dl dd{text-align:center; padding-top:6px;}
+.order-status dl.order-status-cur{color:#0067C0;}
+.order-status dl.order-status-cur  dt i{display:inline-block; width:30px; height:16px; background:url(Images/Mall/dot-blue-icon.png) center;}
+.order-status-line{position:absolute; width:100%; height:4px; background:#eee; left:0px; top:25px; z-index:1;}
+.order-status-dot-left{position:absolute; left:0px; top:23px; width:8px; height:8px; background:url(Images/Mall/dot-icon.png) no-repeat;}
+.order-status-dot-riht{position:absolute; right:0px; top:23px; width:8px; height:8px; background:url(Images/Mall/dot-icon.png) no-repeat;}
+.order-menu{width:100%; clear:both; height:30px; line-height:30px; font-size:14px; color:#555; margin-top:15px;}
+.order-tab{border-top:0px solid #eee; border-left:0px solid #eee;margin: 10px 0px;}
+.order-tab td{border-bottom:0px solid #eee; border-right:0px solid #eee; font-size:12px; color:#686868; font-family:Arial, Helvetica, sans-serif; padding:0px 1px; line-height:20px;}
+.order-tab a{ color:#0067C0; text-decoration:none;}
+.order-tab a:hover{text-decoration:underline;} 
+.order-operating{width:100%; clear:both; text-align:center; margin-top:20px;}
+
+.order-button{border:0px; font-size:12px; color:#fff; font-weight:bold; height:25px; line-height:25px; text-align:center; background:#0067C0; cursor:pointer; padding:0 20px; display:inline-block; margin-right:10px;}
+.order-button:hover{ background:#3399ff;}
+.order-express-delivery{ width:100%; margin:10px auto; height:30px; line-height:30px; border-bottom:1px solid #eee; font-weight:bold; color:#686868; overflow:hidden;}
+.order-express-delivery ul li{ float:left;}
+.order-express-delivery-info{float:left; width:80%;}
+.order-express-delivery-date{float:left; width:10%;}
+.order-express-delivery-operating{float:left; width:10%;}
+.order-express-delivery-box{ clear:both; width:100%; padding-bottom:10px;}
+.order-express-delivery-list{width:100%; margin:0px auto; clear:both; overflow:hidden; color:#686868;}
+.order-express-delivery-list ul li{ height:25px; line-height:25px;}
+.order-product-pic img{ width:50px; height:50px; border:1px solid #eee;}
+
+.productListTotale{width:100%; text-align:right; margin-top:5px;}
+.productListTotale span{color: #f60;font-weight: bold;}
+/** 订单详情 结束 **/
+
+.Basic-info-title 
+{
+    margin-top:10px;
+    border-top: 1px solid #cccccc;
+    color: #737373;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 100%; 
+    padding-top: 1px;
+}
+.order-tab-product{border-top:1px solid #eee; border-left:1px solid #eee;margin-bottom: 20px;margin-top: 20px;}
+.order-tab-product td{border-bottom:1px solid #eee; border-right:1px solid #eee; font-size:12px; color:#686868; font-family:Arial, Helvetica, sans-serif; padding:0px 8px; line-height:20px;}
+.order-tab-product td.order-title{ background:#EEEEEE; color:#777777; font-size:14px; font-weight:bold; }
+.order-tab-product td.order-pirce{ color:#f60; font-weight:bold;}
+
+.order-edit-linkMan{width:20px; height:20px;cursor: pointer;}
+
+/*列表开始*/
+.order-list-tab-menu td{border-bottom:1px solid #fff;color:#555;font-weight:700; border-top:1px solid #ddd; border-left:1px solid #ddd;}
+.order-list-tab{ position:relative; margin-bottom:-1px;  }
+.order-list-tab td{padding:10px 0;border-right:1px solid #ddd;border-bottom:1px solid #ddd;color:#3c3c3c;vertical-align:top;text-align:center;font-size:12px;font-family:Arial,Helvetica,sans-serif;line-height:18px;}
+.order-list-tab .order-list-tab-tr{padding:8px 0;background:#f5f5f5;text-align:left;}
+.order-list-tab a{color:#428BCA;}
+.order-list-tab a:hover{color:#2A6496;text-decoration:underline;}
+.order-list-tab-checked{border:solid 2px #f60 !important;}
+
+.order-list-tab-tr span{ display:inline-block;}
+.order-list-tab-tr span i{color:#f60;}
+
+.order-shanghu a{color:#3c3c3c;}
+.order-list-del{float:right;margin-right:10px;}
+.order-list-del a{display:block;width:16px;height:16px;background:url(images/mall/del.png) no-repeat;}
+.order-user-type{display:inline-block;margin-top:2px;width:30px;height:15px;border-radius:3px;background:#11A9CC;color:#fff;font-size:12px;line-height:15px;}
+.order-list-content{position:relative;clear:both;overflow:hidden;margin-bottom:-1px;padding:12px 0;width:100%;border-bottom:1px solid #ddd;}
+.order-list-pic{float:left;margin-left:15px;width:60px;}
+.order-list-pic img{width:60px;height:60px;}
+.order-list-name{float:left;margin-left:10px;width:216px;}
+.order-list-name p{display:block;text-align:left;}
+.order-list-name p a{color:#3c3c3c;}
+.order-product-guige{padding-top:5px;color:#999;}
+.order-list-price{float:left;padding:0 20px; color:#f60;}
+.order-list-price p{display:block;}
+.order-list-price-through{color:#999;text-decoration:line-through;}
+.order-list-number{float:left;padding-right:30px;padding-left:10px; color:#f60;}
+.order-list-yufei{float:left;}
+.order-list-box{border:1px solid #ddd; margin-bottom:10px; overflow:hidden;}
+.order-list-box:hover{border:1px solid #aaa;}
+.order-list-none{height:100px; line-height:100px; font-family:微软雅黑; color:gray; font-size:24px; text-align:center; border:solid 1px #ddd; margin-top:15px;}
+
+
+
+/*sssss*/
+.OrderDetails{ width:98%; margin:0px auto; overflow:hidden; margin-top:10px; margin-bottom:20px; background:#fff; padding-bottom:20px; border:1px solid #eee;}
+.OrderDetailTitle{width:98%; margin:0px auto; font-size:14px; font-family:微软雅黑; font-weight:bold;  color:#333; padding-top:20px; padding-bottom:8px; clear:both; position:relative;}
+.OrderDetailTitle i{ font-style:normal; color:Red;}
+.OrderDetailTitle p{width:350px; float:left; padding-bottom:6px;}
+.OrderDetailTitle span{width:45px; height:45px; position:absolute; top:5px; right:0px;}
+
+.TravelIntelligence{ width:98%; margin:0px auto; font-size:12px; color:#000; font-family:Arial, Helvetica, sans-serif; word-wrap: break-word; word-break:break-all;}
+.TravelIntelligence table{ border-top:1px solid #ccc; border-left:1px solid #ccc;}
+.TravelIntelligence table td{ text-align:center; padding:5px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;} 
+.TravelIntelligence table td.FlightsTotalPrice{ text-align:right;font-family:Arial, Helvetica, sans-serif; padding-right:10px;}
+.TravelIntelligence table td.FlightsTotalPrice strong{ font-size:18px; color:#f00; padding-right:5px;}
+.TravelIntelligence table td.FlightsMeal{ text-align:left;font-family:Arial, Helvetica, sans-serif; padding-left:10px; line-height:20px; color:#404040;}
+.TravelIntelligence table td.FlightsMeal span{color:#404040;}
+.TravelIntelligence .split{ background-color:#f5f5f5; height:15px;}
+.TravelIntelligence td i{ font-style:normal; color:#f60;}
+
+.TravelPerson{ font-size:12px; height:25px;}
+.TravelPerson td{background:#eee;}
+
+.tableBox{width:98%; margin:0px auto; margin-top:5px; border:1px solid #e6e6e6; line-height:20px; border-right-width:0px; border-bottom-width:0px;} 
+.tableBox td{border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6; text-align:left; padding:5px 0;  padding-left:10px;  font-family:Arial, Helvetica, sans-serif;} 
+.tableBox .tbRight{ text-align:right; background-color:#f5f5f5; color:#4d4d4d; padding-right:8px;}
+
+.order-detail-image{ text-align:left;}
+.order-detail-image table, .order-detail-image td{ border-width:0px !important; text-align:left !important;}
+
+.order-ExpressTracking-box{position:relative;}
+.order-ExpressTracking{width:500px; border:solid 2px #ddd; padding:5px; margin:10px; color:Gray; display:none; position:absolute; left:0px; top:12px; background:#fff;}
+.order-ExpressTracking div{padding:25px;}
+.order-ExpressTracking p{text-align:left;}
+
+/*退货订单*/
+
+
+
+.order-warp{background:#fff; padding-bottom:20px;}
+.order-detail-content{width:96%; margin:0px auto; background:#fff;}
+.refundorder-status{width:1100px; clear:both; position:relative; height:50px; margin-bottom:20px; margin: 0 auto;}
+.refundorder-status dl{float:left; font-size:14px; font-weight:bold; color:#666; width:150px; margin-top:18px; position:relative; z-index:9;}
+.refundorder-status dl dt{text-align:center; height:16px;}
+.refundorder-status dl dt i{display:inline-block; width:30px; height:16px; background:url(Images/Mall/dot-gray-icon.png) no-repeat;}
+.refundorder-status dl dd{text-align:center; padding-top:6px;}
+.refundorder-status dl.order-status-cur{color:#0067C0;}
+.refundorder-status dl.order-status-cur  dt i{display:inline-block; width:30px; height:16px; background:url(Images/Mall/dot-blue-icon.png) center;}
+.order-status-line{position:absolute; width:100%; height:4px; background:#eee; left:0px; top:25px; z-index:1;}
+.order-status-dot-left{position:absolute; left:0px; top:23px; width:8px; height:8px; background:url(Images/Mall/dot-icon.png) no-repeat;}
+.order-status-dot-riht{position:absolute; right:0px; top:23px; width:8px; height:8px; background:url(Images/Mall/dot-icon.png) no-repeat;}
+.order-menu{width:100%; clear:both; height:30px; line-height:30px; font-size:14px; color:#555; margin-top:15px;}
+.order-tab{border-top:0px solid #eee; border-left:0px solid #eee;margin: 10px 0px;}
+.order-tab td{border-bottom:0px solid #eee; border-right:0px solid #eee; font-size:12px; color:#686868; font-family:Arial, Helvetica, sans-serif; padding:0px 1px; line-height:20px;}
+.order-tab a{ color:#0067C0; text-decoration:none;}
+.order-tab a:hover{text-decoration:underline;} 
+.order-operating{width:100%; clear:both; text-align:center; margin-top:20px;}
