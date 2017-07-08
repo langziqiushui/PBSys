@@ -329,6 +329,8 @@
     <Content Include="JScripts\Modules\SystemConfig.js" />
     <Content Include="JScripts\DataSelector.js" />
     <Content Include="JScripts\baiduMap.js" />
+    <Content Include="OfficialAccount\OfficialAccountList.aspx" />
+    <Content Include="OfficialAccount\OfficialAccountDialog.aspx" />
     <Content Include="Passport\Login.aspx" />
     <Content Include="Passport\Signout.aspx" />
     <Content Include="Repair\BrowserUnSupport.htm" />
@@ -422,6 +424,21 @@
     </Compile>
     <Compile Include="MasterPages\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OfficialAccount\DBHelper.cs" />
+    <Compile Include="OfficialAccount\OfficialAccountList.aspx.cs">
+      <DependentUpon>OfficialAccountList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficialAccount\OfficialAccountList.aspx.designer.cs">
+      <DependentUpon>OfficialAccountList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OfficialAccount\OfficialAccountDialog.aspx.cs">
+      <DependentUpon>OfficialAccountDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficialAccount\OfficialAccountDialog.aspx.designer.cs">
+      <DependentUpon>OfficialAccountDialog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Passport\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

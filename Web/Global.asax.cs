@@ -90,6 +90,7 @@ namespace YX.Web
             routes.MapPageRoute("LogList", "Admin/Glo/LogList", "~/Admin/Glo/LogList.aspx");
             routes.MapPageRoute("DBConfig", "Admin/Glo/DBConfig", "~/Admin/Glo/DBConfig.aspx");
             routes.MapPageRoute("PBConfigList", "Admin/Glo/PBConfigList", "~/Admin/Glo/PBConfigList.aspx");
+            routes.MapPageRoute("OfficialAccount", "OfficialAccount/OfficialAccountList", "~/OfficialAccount/OfficialAccountList.aspx");
 
             //后台主页
             routes.MapPageRoute("AdminIndex", "Admin/Index", "~/Admin/Index.aspx");
