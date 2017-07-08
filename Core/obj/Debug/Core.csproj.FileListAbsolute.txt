@@ -10,3 +10,8 @@ E:\code\BBTIKU\WEBAPI\Core\bin\Debug\YX.Core.pdb
 E:\code\BBTIKU\WEBAPI\Core\obj\Debug\YX.Core.dll
 E:\code\BBTIKU\WEBAPI\Core\obj\Debug\YX.Core.pdb
 E:\code\BBTIKU\WEBAPI\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\WorkSpace\PBSys\Core\bin\Debug\YX.Core.dll
+D:\WorkSpace\PBSys\Core\bin\Debug\YX.Core.pdb
+D:\WorkSpace\PBSys\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\WorkSpace\PBSys\Core\obj\Debug\YX.Core.dll
+D:\WorkSpace\PBSys\Core\obj\Debug\YX.Core.pdb

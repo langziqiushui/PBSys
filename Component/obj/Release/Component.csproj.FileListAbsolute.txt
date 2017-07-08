@@ -1,9 +1,0 @@
-E:\code\BBTIKU\WEBAPI\Component\bin\Release\YX.Component.dll
-E:\code\BBTIKU\WEBAPI\Component\bin\Release\YX.Component.pdb
-E:\code\BBTIKU\WEBAPI\Component\bin\Release\YX.Core.dll
-E:\code\BBTIKU\WEBAPI\Component\bin\Release\NPOI.dll
-E:\code\BBTIKU\WEBAPI\Component\bin\Release\JsonSeralize.dll
-E:\code\BBTIKU\WEBAPI\Component\bin\Release\YX.Core.pdb
-E:\code\BBTIKU\WEBAPI\Component\obj\Release\Component.csprojResolveAssemblyReference.cache
-E:\code\BBTIKU\WEBAPI\Component\obj\Release\YX.Component.dll
-E:\code\BBTIKU\WEBAPI\Component\obj\Release\YX.Component.pdb
